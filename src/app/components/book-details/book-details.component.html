@@ -1,0 +1,101 @@
+<div class="book-id">
+    <span routerLink="/Dashboard/cards">Home/</span> Book({{data.id}})
+    </div>
+    
+    <div class="main-div">
+        <div class="inner-div1">
+            <img  class="book" src="{{data.image}}">
+            <div class="buttons">
+                <button class="add-to-bag" (click)="Quantity(data.id)" *ngIf="button">ADD TO BAG</button>
+
+                 <span class="add-quantity"  *ngIf="!button">
+                       
+                      
+                  <button  class="material-symbols-outlined"  (click)="decrement()"><img  src="../../../assets/remove_24dp_FILL0_wght400_GRAD0_opsz24.svg"></button>
+                  <span>{{count}}</span>
+                  <button  class="material-symbols-outlined"  (click)="increment()"> <img  src="../../../assets/add_24dp_FILL0_wght400_GRAD0_opsz24.svg"></button>
+
+
+                 </span>
+    
+                    
+                 <button class="whishlist" (click)="add(data.id)"  (click)="onclick()">&#10084; WHISHLIST</button>
+    
+        </div>
+        </div>
+        <div class="inner-div2">
+            <div class="title">
+                <span>{{data.title}}</span>
+            </div>
+            <div class="author">
+                <span>{{data.author}}</span>
+            </div>
+            <div class="book-rating">
+                <span>{{data.ratting}}</span><span>({{data.numberOfRattings}})</span>
+            </div>
+            <div class="book-price">
+                RS.  {{data.discountprice}}<span>  {{data.originalprice}}</span>
+    
+            </div>
+    
+            <div class="book-data">
+                <span class="icon">&bull;</span> <span>Book Detail</span>
+            </div>
+            <div class="book-description">
+                <span>{{data.description}}</span>
+            </div>
+    
+            <div class="feedback-details">
+                <span>Customer Feedback</span>
+            </div>
+            <div class="feedback">
+                <div class="rating">
+                    
+                    <span>Overall rating</span>
+                </div>
+                <div class="stars">
+                    <span> &#9734; &#9734; &#9734; &#9734; &#9734;</span>
+                </div>
+                <div class="review-text">
+                    <input type="text" placeholder="Write your review">
+                </div>
+                <div class="submit">
+                    <button>Submit</button>
+                </div>
+                
+    
+            </div>
+            <!-- <div class="review-display">
+                <span class="review-image">
+                    AC
+                </span>
+                <span class="name">
+                   Loki 
+                </span>
+            </div>
+            <div class="review-stars">
+                <span>&starf;&starf;&starf;&starf;&starf;</span>
+            </div>
+            <div class="display-text">
+                <span>
+                    Good book.
+                </span>
+            </div> -->
+            <!-- <div class="review-display">
+                <span class="review-image">
+                    CV
+                </span>
+                <span class="name">
+                    Simth
+                </span>
+            </div> -->
+            <!-- <div class="review-stars">
+                <span>&starf;&starf;&starf;&starf;&starf;</span>
+            </div> -->
+            <!-- <div class="display-text"> -->
+                <!-- <span>
+                    Great Book.
+                </span> -->
+            <!-- </div> -->
+        </div>
+    </div>

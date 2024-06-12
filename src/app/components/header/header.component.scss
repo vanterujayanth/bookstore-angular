@@ -1,0 +1,109 @@
+.mat-toolbar{
+    background-color: #A03037;
+    width: 100%;
+    height: 66px !important;
+    background: #A03037 0% 0% no-repeat padding-box;
+    opacity: 1;
+    margin:0px auto;
+    display:flex;
+    padding-top: 5px;
+    
+    justify-content: space-between;
+    align-items: center;
+
+}
+.image{
+    display: flex;
+    padding-left: 100px;
+}
+.para{
+    margin-top: 10px;
+    color: white;
+    font-weight: 20px;
+    margin-left: 10px;
+}
+
+
+.searchinput{
+    padding-top: 30px;
+    height: 70px;
+    width: 750px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    padding-left: 70px;
+   margin-right: 0px;
+
+}
+.person{
+    display:flex;
+    flex-direction: column;
+    //padding-top: 10px;
+    padding-left: 30px;
+    margin-left: 160px;
+
+}
+.person-img{
+    padding-top:20px;
+    height:50px;
+    width:35px;
+    color: white;
+    //background-color: white;
+}
+.shopping_bag:hover{
+    color:blue;
+    cursor: pointer;
+}
+.orders{
+    display: flex;
+    flex-direction: row;
+    
+}
+.person-profile{
+    display: flex;
+}
+.lbutton button{
+    font: normal normal normal 12px/16px Roboto;
+    letter-spacing: 0px;
+    border:1px solid #A03037;
+    color: #A03037;
+    padding: 4px 20px;
+    margin-bottom: 7px;
+    
+}
+.wishlist-icon{
+    margin-left: 50px;
+    margin-top: 17px;
+}
+.lbutton button:hover{
+    cursor: pointer;
+}
+.person-img:hover{
+    cursor: pointer;
+} 
+#dialog{
+    margin-top: 35px;
+    margin-left:1250px;
+    height: 220px;
+    width:218px;
+    border:none;
+    border:1px solid #878787;
+    background-color: rgb(246, 242, 242)
+}
+.profile:hover{
+    cursor: pointer;
+}
+.person-img{
+    padding-top: 10px;
+    height:30px;
+    color:blue;
+}
+
+.shopping_bag :hover{
+    cursor: pointer;
+}
+
+
+.cart-pic:hover{
+    cursor: pointer;
+}
